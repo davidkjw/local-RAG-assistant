@@ -23,21 +23,16 @@ A privacy-first desktop application that allows you to chat with your PDF docume
 ### Prerequisites
 - **Windows 10/11** (macOS/Linux support planned)
 - **8GB+ RAM** (16GB recommended for larger models)
-- **Python 3.8+** (will be installed automatically)
+- **Python 3.8+**
 - **10GB free disk space** for AI models
 
 ### Installation
 
-1. **Download the installer** from [Releases](https://github.com/yourusername/rag-pdf-assistant/releases)
-2. **Run the installer** (`RAG_PDF_Assistant_Setup.exe`)
-3. **Follow the on-screen setup wizard** - it will install everything automatically!
-
-The installer will:
-- Install Python (if not present)
-- Install required Python packages
-- Download and install Ollama
-- Guide you through downloading your first AI model
-- Launch the application
+- **Install Python (if not present)
+- **Install required Python packages
+- **Download and install Ollama
+- **Guide you through downloading your first AI model
+- **Launch the application
 
 ### First-Time Setup Time
 - **First run:** 15-30 minutes (includes model downloads)
