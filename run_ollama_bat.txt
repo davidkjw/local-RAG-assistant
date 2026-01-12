@@ -1,0 +1,91 @@
+@echo off
+echo ========================================
+echo    RAG with Ollama - Local AI Setup
+echo ========================================
+echo.
+
+REM Step 1: Check Python
+echo [1/4] Checking Python...
+where python >nul 2>&1
+if errorlevel 1 (
+    echo ❌ Python not found!
+    echo Please install from: https://www.python.org/downloads/
+    pause
+    exit /b 1
+)
+
+echo ✅ Python found
+python --version
+echo.
+
+REM Step 2: Install packages
+echo [2/4] Installing packages...
+echo (This may take 2-3 minutes)...
+python -m pip install --upgrade pip
+python -m pip install -r requirements_ollama.txt
+echo ✅ Packages installed!
+echo.
+
+REM Step 3: Check if Ollama is installed
+echo [3/4] Checking Ollama...
+where ollama >nul 2>&1
+if errorlevel 1 (
+    echo ❌ Ollama not found!
+    echo.
+    echo ========================================
+    echo    PLEASE INSTALL OLLAMA FIRST:
+    echo ========================================
+    echo 1. Go to: https://ollama.ai
+    echo 2. Download Ollama for Windows
+    echo 3. Install it (takes 2 minutes)
+    echo 4. Open Command Prompt and run:
+    echo    ollama pull llama2
+    echo 5. Wait for model download (4GB)
+    echo 6. Run this script again
+    echo ========================================
+    echo.
+    pause
+    exit /b 1
+)
+
+echo ✅ Ollama is installed!
+echo.
+
+REM Step 4: Check if Ollama is running
+echo Checking if Ollama is running...
+curl -s http://localhost:11434/api/tags >nul 2>&1
+if errorlevel 1 (
+    echo ⚠️  Ollama is not running!
+    echo Starting Ollama...
+    start /B ollama serve
+    timeout /t 3 >nul
+)
+
+echo ✅ Ollama is ready!
+echo.
+
+REM Step 5: Run the app
+echo [4/4] Starting RAG Assistant...
+echo.
+echo ========================================
+echo    ✅ App is starting!
+echo.
+echo    IMPORTANT:
+echo    1. Open browser and go to:
+echo       http://localhost:8501
+echo.
+echo    2. If you haven't downloaded a model yet:
+echo       - Open another Command Prompt
+echo       - Run: ollama pull llama2
+echo       - Wait for download (4GB)
+echo.
+echo    3. Upload a PDF
+echo    4. Ask questions
+echo.
+echo    Press CTRL+C to stop
+echo ========================================
+echo.
+
+python -m streamlit run rag_ollama.py --server.port=8501
+
+pause
