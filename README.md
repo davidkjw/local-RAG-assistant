@@ -105,17 +105,6 @@ text
 - ✅ Temporary files deleted on exit
 - ✅ Works in air-gapped environments
 
-## 🤝 Contributing
-
-I welcome contributions! Here's how you can help:
-
-1. **Report bugs** in the [Issues](https://github.com/yourusername/rag-pdf-assistant/issues) section
-2. **Suggest features** that would help your workflow
-3. **Submit pull requests** for improvements
-4. **Improve documentation** for other users
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
 ## 🐛 Troubleshooting
 
 ### Common Issues
@@ -136,8 +125,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 - Try a smaller model (Phi-2 or Mistral 7B)
 - Close other memory-intensive applications
 - Ensure you have at least 8GB free RAM
-
-**More help?** Check our [Troubleshooting Guide](docs/TROUBLESHOOTING.md)
 
 ## ❓ FAQ
 
