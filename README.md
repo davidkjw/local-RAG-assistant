@@ -28,11 +28,11 @@ A privacy-first desktop application that allows you to chat with your PDF docume
 
 ### Installation
 
-- **Install Python (if not present)
-- **Install required Python packages
-- **Download and install Ollama
-- **Guide you through downloading your first AI model
-- **Launch the application
+- Install Python (if not present)
+- Install required Python packages
+- Download and install Ollama
+- Guide you through downloading your first AI model
+- Launch the application
 
 ### First-Time Setup Time
 - **First run:** 15-30 minutes (includes model downloads)
@@ -107,7 +107,7 @@ text
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how you can help:
+I welcome contributions! Here's how you can help:
 
 1. **Report bugs** in the [Issues](https://github.com/yourusername/rag-pdf-assistant/issues) section
 2. **Suggest features** that would help your workflow
