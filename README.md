@@ -175,7 +175,7 @@ A: Yes! Any model supported by Ollama can be used.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgments
 
@@ -184,14 +184,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [FAISS](https://github.com/facebookresearch/faiss) for vector similarity search
 - [Streamlit](https://streamlit.io) for the amazing UI framework
 
-## 📞 Support
 
-- **Documentation**: [docs/](docs/)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/rag-pdf-assistant/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/rag-pdf-assistant/discussions)
-- **Email**: support@example.com
-
----
 
 **⭐ If you find this useful, please consider giving it a star on GitHub! ⭐**
 
