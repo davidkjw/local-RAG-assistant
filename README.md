@@ -83,12 +83,15 @@ Choose from various models (all run locally):
 
 ### Architecture
 Streamlit UI → Application Logic → Ollama (Local LLM)
+
 ↓
+
 FAISS Vector Database
+
 ↓
+
 Sentence Transformers (Embeddings)
 
-text
 
 ### Technology Stack
 - **Frontend**: Streamlit (Python web framework)
