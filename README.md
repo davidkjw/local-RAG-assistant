@@ -54,11 +54,10 @@ The platform uses a **Dual-Process Flow** to ensure data stays local while maint
 ### 1. Prerequisites
 - **Python 3.9+**
 - **Ollama Installed** ([Download here](https://ollama.com))
-
-### 2. Installation
-```bash
-git clone [https://github.com/yourusername/rag-pdf-assistant.git](https://github.com/yourusername/rag-pdf-assistant.git)
-cd rag-pdf-assistant
-pip install -r requirements.txt
-# Ensure Ollama is running in the background (Command: ollama serve)
-streamlit run app.py
+#### 2. Installation
+    git clone [https://github.com/yourusername/rag-pdf-assistant.git](https://github.com/yourusername/rag-pdf-assistant.git)
+    cd rag-pdf-assistant
+    pip install -r requirements.txt
+    # Ensure Ollama is running in the background (Command: ollama serve)
+    streamlit run app.py
+## ⭐ Love this tool? Give it a star on GitHub! ⭐
